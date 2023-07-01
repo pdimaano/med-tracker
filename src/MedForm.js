@@ -30,4 +30,33 @@ function MedForm({ initialFormData = defaultInitialFormData, handleSave }) {
     handleSave(formData);
     setFormData(initialFormData);
   }
+
+  return (
+    <form className="NewMedForm" onSubmit={handleSubmit}>
+      <div className="mb-3">
+        <input
+          id="newMed-name"
+          name="name"
+          className="form-control"
+          placeholder="Name"
+          onChange={handleChange}
+          value={formData.name}
+          aria-label="Name"
+        />
+      </div>
+      <div className="mb-3">
+        <input
+          id="newMed-description"
+          name="description"
+          className="form-control"
+          placeholder="Description"
+          onChange={handleChange}
+          value={formData.description}
+          aria-label="Description"
+        />
+      </div>
+    </form>
+  );
 }
+
+export default MedForm;
