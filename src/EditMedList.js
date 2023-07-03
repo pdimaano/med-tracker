@@ -10,3 +10,16 @@ import EditMed from "./EditMed";
  *
  *  MedApp -> EditMedList -> [ EditMed, ... ]
  */
+
+function EditMedList({ meds, update, remove }) {
+  return meds.map(med => (
+    <EditMed
+      key={med.id}
+      med={med}
+      update={update}
+      remove={remove}
+    />
+  ));
+}
+
+export default EditMedList;
