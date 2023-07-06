@@ -10,21 +10,25 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className="App">
+      <header className="container-fluid pt-4 pb-1">
+        <div className="container">
+          <h1>Medication Tracker</h1>
+        </div>
       </header>
-    </div>
+
+      <section className="container mt-4">
+        <MedApp initialMeds={[
+          {
+            id: 1,
+            name: "Ozempic",
+            description: "Antidiabetic medication",
+            dosage: "0.5mg once weekly"
+          },
+        ]} />
+        
+      </section>
+    </main>
   );
 }
 
