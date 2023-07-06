@@ -39,5 +39,29 @@ function MedApp({ initialMeds }) {
     setMeds(meds => meds.filter(med => med.id !== id));
   }
 
-  
+  return (
+    <main className="MedApp">
+      <div className="row">
+        <div className="col-md-6">
+          <section>
+            <h3 className="mb-3">Add Medication</h3>
+            <MedForm handleSave={create} />
+          </section>
+        </div>
+
+        <div className="mb-3">
+          <h3 className="mb-3">Medications</h3>
+          {meds.length > 0
+            ? <EditMedList
+              meds={meds}
+              update={update}
+              remove={remove} />
+            : <span className="text-muted">No medications.</span>}
+        </div>
+
+      </div>
+    </main>
+  );
 }
+
+export default MedApp;
