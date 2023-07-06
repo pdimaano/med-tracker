@@ -1,4 +1,12 @@
+import React from "react";
+import MedApp from "./MedApp";
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
+
+/** Site application
+ *
+ *  App -> MedApp
+ */
 
 function App() {
   return (
