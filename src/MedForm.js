@@ -55,6 +55,13 @@ function MedForm({ initialFormData = defaultInitialFormData, handleSave }) {
           aria-label="Description"
         />
       </div>
+
+      <div className="mb-3">
+        <button className="btn-primary btn btn-sm NewMedForm-addBtn">
+          Done
+        </button>
+      </div>
+      
     </form>
   );
 }
