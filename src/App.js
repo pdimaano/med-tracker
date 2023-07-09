@@ -26,9 +26,9 @@ function App() {
             dosage: "0.5mg once weekly"
           },
         ]} />
-        
       </section>
     </main>
+    
   );
 }
 
