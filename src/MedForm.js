@@ -57,11 +57,11 @@ function MedForm({ initialFormData = defaultInitialFormData, handleSave }) {
       </div>
 
       <div className="mb-3">
-        <button className="btn-primary btn btn-sm NewMedForm-addBtn">
+        <button className="btn-primary btn btn-sm float-end NewMedForm-addBtn">
           Done
         </button>
       </div>
-      
+
     </form>
   );
 }
