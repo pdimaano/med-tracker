@@ -22,13 +22,12 @@ function App() {
           {
             id: 1,
             name: "Ozempic",
-            description: "Antidiabetic medication",
-            dosage: "0.5mg once weekly"
+            description: "Antidiabetic medication, 0.5 mg once weekly"
           },
         ]} />
       </section>
     </main>
-    
+
   );
 }
 
