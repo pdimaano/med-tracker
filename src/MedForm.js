@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultInitialFormData = { name: "", description: "", dosage: "" };
+const defaultInitialFormData = { name: "", description: "" };
 
 /** Form to add medication.
  *
