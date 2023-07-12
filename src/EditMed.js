@@ -33,7 +33,7 @@ function EditMed({ med, remove, update }) {
   }
 
   return (
-    <div className="EditMed">
+    <div className="EditMed w-50">
       {isEditing ? (
         <MedForm initialFormData={med} handleSave={handleSave} />
       ) : (
