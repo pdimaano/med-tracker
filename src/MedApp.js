@@ -40,7 +40,7 @@ function MedApp({ initialMeds }) {
   }
 
   return (
-    <main className="MedApp">
+    <main className="MedApp w-50">
       <div className="row">
         <div className="col-md-6">
           <section>
@@ -50,7 +50,7 @@ function MedApp({ initialMeds }) {
         </div>
 
         <div className="mb-3">
-          <h3 className="mb-3">Medications</h3>
+          <h3 className="mb-3">Monday Medications</h3>
           {meds.length > 0
             ? <EditMedList
               meds={meds}
