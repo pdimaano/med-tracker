@@ -44,13 +44,13 @@ function MedApp({ initialMeds }) {
       <div className="row">
         <div className="col-md-6">
           <section>
-            <h3 className="mb-3">Add Medication</h3>
+            <h5 className="mb-3">Add Medication</h5>
             <MedForm handleSave={create} />
           </section>
         </div>
 
         <div className="mb-3">
-          <h3 className="mb-3">Monday Medications</h3>
+          <h5 className="mb-3">Monday Medications</h5>
           {meds.length > 0
             ? <EditMedList
               meds={meds}
