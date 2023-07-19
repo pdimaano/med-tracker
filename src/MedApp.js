@@ -47,16 +47,16 @@ function MedApp({ initialMeds }) {
             <h5 className="mb-3">Add Medication</h5>
             <MedForm handleSave={create} />
           </section>
-        </div>
 
-        <div className="mb-3">
-          <h5 className="mb-3">Monday Medications</h5>
-          {meds.length > 0
-            ? <EditMedList
+          <div className="mb-3">
+            <h5 className="mb-3">Monday Medications</h5>
+            {meds.length > 0
+              ? <EditMedList
               meds={meds}
               update={update}
               remove={remove} />
-            : <span className="text-muted">No medications.</span>}
+              : <span className="text-muted">No medications.</span>}
+          </div>
         </div>
 
       </div>
