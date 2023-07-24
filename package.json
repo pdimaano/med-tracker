@@ -14,6 +14,7 @@
     "react-dom": "*",
     "react-router-dom": "*",
     "react-scripts": "*",
+    "reactstrap": "*",
     "slugify": "*",
     "web-vitals": "*"
   },
