@@ -8,8 +8,8 @@ import {
   Button,
   Form,
   Label,
-  Input
-} from "reactstrap"
+  Input,
+} from "reactstrap";
 
 /** Form for adding a medication.
  *
@@ -42,42 +42,63 @@ function MedForm({ addMed }) {
     let { day, ...data } = form;
     addMed(day, data);
     navigate("/");
-  }
+  };
 
   const { day, name, description } = form;
 
   return (
-    <form className="NewMedForm" onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <input
-          id="newMed-name"
-          name="name"
-          className="form-control"
-          placeholder="Name"
-          onChange={handleChange}
-          value={formData.name}
-          aria-label="Name"
-        />
-      </div>
-      <div className="mb-3">
-        <input
-          id="newMed-description"
-          name="description"
-          className="form-control"
-          placeholder="Description"
-          onChange={handleChange}
-          value={formData.description}
-          aria-label="Description"
-        />
-      </div>
+    <section className="col-md-4">
+      <Card>
+        <CardBody>
+          <CardTitle className="fw-bold text-center">Add Medication</CardTitle>
+          <CardText>Add a daily medication</CardText>
 
-      <div className="mb-3">
-        <button className="btn-primary btn btn-sm float-end NewMedForm-addBtn">
-          Done
-        </button>
-      </div>
+          <Form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <Label for="day">Day</Label>
+              <Input
+                type="select"
+                name="day"
+                id="day"
+                value={day}
+                onChange={handleChange}
+              >
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+              </Input>
+            </div>
 
-    </form>
+            <div className="mb-3">
+              <Label for="name">Name</Label>
+              <Input
+                name="name"
+                id="name"
+                value={name}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="mb-3">
+              <Label for="description">Description</Label>
+              <Input
+                type="textarea"
+                name="description"
+                id="description"
+                value={description}
+                onChange={handleChange}
+              />
+            </div>
+
+            <Button className="float-end btn btn-outline-light">Add Med</Button>
+          </Form>
+        </CardBody>
+      </Card>
+    </section>
   );
 }
 
