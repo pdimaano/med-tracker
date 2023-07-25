@@ -21,24 +21,30 @@ import {
  *
  */
 
-function MedForm({ initialFormData = defaultInitialFormData, handleSave }) {
-  const [formData, setFormData] = useState(initialFormData);
+function MedForm({ addMed }) {
+  const [form, setForm] = useState({
+    day: "Sunday",
+    name: "",
+    description: "",
+  });
+  const navigate = useNavigate();
 
-  /** Update form input */
-  function handleChange(evt) {
-    const input = evt.target;
-    setFormData(formData => ({
-      ...formData,
-      [input.name]: input.value,
+  const handleChange = (evt) => {
+    const { name, value } = evt.target;
+    setForm((f) => ({
+      ...f,
+      [name]: value,
     }));
+  };
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    let { day, ...data } = form;
+    addMed(day, data);
+    navigate("/");
   }
 
-  /** Call parent function and clear form */
-  function handleSubmit(evt) {
-    evt.preventDefault();
-    handleSave(formData);
-    setFormData(initialFormData);
-  }
+  const { day, name, description } = form;
 
   return (
     <form className="NewMedForm" onSubmit={handleSubmit}>
