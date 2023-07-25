@@ -1,14 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  Button,
+  Form,
+  Label,
+  Input
+} from "reactstrap"
 
-const defaultInitialFormData = { name: "", description: "" };
-
-/** Form to add medication.
+/** Form for adding a medication.
  *
  *  Props:
- *  - defaultData
- *  - handleSave: function to call in parent.
+ *  - addMed: call to add med in parent
  *
- *  { MedApp, EditMed } -> MedForm
+ *  State:
+ *  - local state for each field on form
  *
  */
 
