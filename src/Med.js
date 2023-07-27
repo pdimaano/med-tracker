@@ -1,11 +1,13 @@
 import React from "react";
+import { Navigate, useParams } from "react-router-dom";
+import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
-/** Presentation component for a medication.
+/** Details for medication.
  *
  *  Props:
- *  - med: like { id, name, description }
+ *  - cantFind: path to Navigate to if can't find item w/ that ID
+ *  - meds: list of medications
  *
- *  { EditableMed } -> Med
  **/
 
 function Med({ med }) {
