@@ -10,12 +10,21 @@ import { Card, CardBody, CardTitle, CardText } from "reactstrap";
  *
  **/
 
-function Med({ med }) {
+function Med({ meds, cantFind }) {
+  const { id } = useParams();
+
+  let med = meds.find((med) => med.id === id);
+  if (!med) return <Navigate to={cantFind} />;
+
   return (
-    <div className="Med">
-      <div><b>{med.name}</b> </div>
-      <div>{med.description}</div>
-    </div>
+    <section>
+      <Card>
+        <CardBody>
+          <CardTitle className="fw-bold text-center">{med.name}</CardTitle>
+          <CardText className="font-italic">{med.description}</CardText>
+        </CardBody>
+      </Card>
+    </section>
   );
 }
 
