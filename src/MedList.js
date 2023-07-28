@@ -17,10 +17,23 @@ import {
  *
  */
 
-function EditMedList({ meds, update, remove }) {
-  return meds.map((med) => (
-    <EditMed key={med.id} med={med} update={update} remove={remove} />
-  ));
+function MedList({ day, meds }) {
+  return (
+    <section className="col-md-4">
+      <Card>
+        <CardBody>
+          <CardTitle className="fw-bold text-center">{day} Meds</CardTitle>
+          <ListGroup>
+            {meds.map((med) => (
+              <Link to={`/${day.toLowerCase()}/${med.id}`} key={med.id}>
+                <ListGroupItem>{med.name}</ListGroupItem>
+              </Link>
+            ))}
+          </ListGroup>
+        </CardBody>
+      </Card>
+    </section>
+  );
 }
 
-export default EditMedList;
+export default MedList;
