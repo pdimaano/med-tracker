@@ -1,34 +1,20 @@
-import React from "react";
-import MedApp from "./MedApp";
-import "bootstrap/dist/css/bootstrap.css";
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Home from "./Home";
+import { fetchMeds, addMed as addMedApi } from "./Api";
+import NavBar from "./NavBar";
+import { Route, Routes } from "react-router-dom";
+import MedList from "./MedList";
+import Med from "./Med";
+import slugify from "slugify";
+import MedForm from "./MedForm";
 
-/** Site application
+/** Medication tracker main application.
  *
- *  App -> MedApp
+ *  Props: none
+ *
+ *  State:
+ *  - meds: list of med data objects - populated via AJAX call
+ *  - isLoading: boolean, has data loaded yet?
+ *
  */
-
-function App() {
-  return (
-    <main className="App">
-      <header className="container-fluid pt-4 pb-1">
-        <div className="container">
-          <h1>Medication Tracker</h1>
-        </div>
-      </header>
-
-      <section className="container mt-4">
-        <MedApp initialMeds={[
-          {
-            id: 1,
-            name: "Ozempic",
-            description: "Antidiabetic medication"
-          },
-        ]} />
-      </section>
-    </main>
-
-  );
-}
-
-export default App;
