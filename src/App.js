@@ -82,6 +82,90 @@ function App() {
   } = meds;
 
   if (isLoading) {
-    return <p>Loading...</p>
+    return <p>Loading...</p>;
   }
+
+  return (
+    <div className="App">
+      <NavBar />
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                sundays={sundays}
+                mondays={mondays}
+                tuesdays={tuesdays}
+                wednesdays={wednesdays}
+                thursdays={thursdays}
+                fridays={fridays}
+                saturdays={saturdays}
+              />
+            }
+          />
+          <Route path="/add" element={<MedForm addMed={addMed} />} />
+          <Route
+            path="/sunday"
+            element={<MedList meds={sundays} day="sunday" />}
+          />
+          <Route
+            path="/monday"
+            element={<MedList meds={mondays} day="monday" />}
+          />
+          <Route
+            path="/tuesday"
+            element={<MedList meds={tuesdays} day="tuesday" />}
+          />
+          <Route
+            path="/wednesday"
+            element={<MedList meds={wednesdays} day="wednesday" />}
+          />
+          <Route
+            path="/thursday"
+            element={<MedList meds={thursdays} day="thursday" />}
+          />
+          <Route
+            path="/friday"
+            element={<MedList meds={fridays} day="friday" />}
+          />
+          <Route
+            path="/saturday"
+            element={<MedList meds={saturdays} day="saturday" />}
+          />
+          <Route
+            path="/sunday/:id"
+            element={<Med meds={sundays} cantFind="/sunday" />}
+          />
+          <Route
+            path="/monday/:id"
+            element={<Med meds={mondays} cantFind="/monday" />}
+          />
+          <Route
+            path="/tuesday/:id"
+            element={<Med meds={tuesdays} cantFind="/tuesday" />}
+          />
+          <Route
+            path="/wednesday/:id"
+            element={<Med meds={wednesdays} cantFind="/wednesday" />}
+          />
+          <Route
+            path="/thursday/:id"
+            element={<Med meds={thursdays} cantFind="/thursday" />}
+          />
+          <Route
+            path="/friday/:id"
+            element={<Med meds={fridays} cantFind="/friday" />}
+          />
+          <Route
+            path="/saturday/:id"
+            element={<Med meds={saturdays} cantFind="/saturday" />}
+          />
+          <Route element={<p>No Medications.</p>} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
+
+export default App;
