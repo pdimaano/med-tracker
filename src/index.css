@@ -1,5 +1,14 @@
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100vh;
+  overflow: scroll;
+  background: url(https://cdn.wallpaper.com/main/himitsu.jpg) no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
