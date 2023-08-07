@@ -1,0 +1,38 @@
+nav {
+    background-color: black;
+    box-shadow: 0 2px 2px #100f0f;
+}
+
+.nav-item {
+    width: 100px;
+    text-align: center;
+}
+
+nav a {
+    color: #eeefff;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #eeefff;
+    font-weight: bold;
+    border-bottom: 5px dotted;
+    box-sizing: border-box;
+}
+
+nav a.active:hover {
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #eeefff;
+}
+
+nav a.active.navbar-brand {
+    border-bottom: none;
+}
+
+nav a:not(.navbar-brand):hover {
+    font-weight: bold;
+}
