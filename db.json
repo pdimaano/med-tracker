@@ -1,9 +1,66 @@
 {
-    "Sunday": [
-        {
-            "id": "ozempic",
-            "name": "Ozempic",
-            "description": "0.25 mg once weekly"
-        }
-    ]
+  "Sunday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "wow",
+      "name": "WOW",
+      "description": "wow"
+    }
+  ],
+  "Monday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    }
+  ],
+  "Tuesday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "brit",
+      "name": "Brit",
+      "description": "asdf"
+    }
+  ],
+  "Wednesday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    }
+  ],
+  "Thursday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "test",
+      "name": "TEST",
+      "description": "TESTING"
+    }
+  ],
+  "Friday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    }
+  ],
+  "Saturday": [
+    {
+      "id": "ozempic",
+      "name": "Ozempic",
+      "description": "0.25 mg once weekly"
+    }
+  ]
 }
