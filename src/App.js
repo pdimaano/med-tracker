@@ -63,7 +63,7 @@ function App() {
     let id = slugify(name, { lower: true });
     let objData = { id, name, description };
     await addMedApi(day, objData);
-    setMeds((m) => ({
+    setMeds(m => ({
       ...m,
       [day]: [...m[day], objData],
     }));
