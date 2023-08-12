@@ -23,7 +23,7 @@ import {
 
 function MedForm({ addMed }) {
   const [form, setForm] = useState({
-    day: "Sunday",
+    day: "sunday",
     name: "",
     description: "",
   });
@@ -63,13 +63,13 @@ function MedForm({ addMed }) {
                 value={day}
                 onChange={handleChange}
               >
-                <option>Sunday</option>
-                <option>Monday</option>
-                <option>Tuesday</option>
-                <option>Wednesday</option>
-                <option>Thursday</option>
-                <option>Friday</option>
-                <option>Saturday</option>
+                <option>sunday</option>
+                <option>monday</option>
+                <option>tuesday</option>
+                <option>wednesday</option>
+                <option>thursday</option>
+                <option>friday</option>
+                <option>saturday</option>
               </Input>
             </div>
 
