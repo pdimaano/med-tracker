@@ -1,65 +1,110 @@
 {
-  "Sunday": [
+  "sunday": [
     {
       "id": "ozempic",
       "name": "Ozempic",
       "description": "0.25 mg once weekly"
     },
     {
-      "id": "wow",
-      "name": "WOW",
-      "description": "wow"
+      "id": "in",
+      "name": "in",
+      "description": "out"
+    },
+    {
+      "id": "outlaw",
+      "name": "outlaw",
+      "description": "deputy"
     }
   ],
-  "Monday": [
+  "monday": [
     {
-      "id": "ozempic",
-      "name": "Ozempic",
+      "id": "test1",
+      "name": "Test1",
       "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "wow",
+      "name": "wow",
+      "description": "wow"
+    },
+    {
+      "id": "wonder",
+      "name": "wonder",
+      "description": "wunder"
     }
   ],
-  "Tuesday": [
+  "tuesday": [
     {
-      "id": "ozempic",
-      "name": "Ozempic",
+      "id": "test2",
+      "name": "Test2",
       "description": "0.25 mg once weekly"
     },
     {
       "id": "brit",
       "name": "Brit",
-      "description": "asdf"
+      "description": "Brits"
+    },
+    {
+      "id": "dues",
+      "name": "dues",
+      "description": "dues day"
     }
   ],
-  "Wednesday": [
+  "wednesday": [
     {
-      "id": "ozempic",
-      "name": "Ozempic",
-      "description": "0.25 mg once weekly"
-    }
-  ],
-  "Thursday": [
-    {
-      "id": "ozempic",
-      "name": "Ozempic",
+      "id": "test3",
+      "name": "Test3",
       "description": "0.25 mg once weekly"
     },
     {
-      "id": "test",
-      "name": "TEST",
-      "description": "TESTING"
+      "id": "test4",
+      "name": "Test4",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "wed",
+      "name": "wed",
+      "description": "wet"
     }
   ],
-  "Friday": [
+  "thursday": [
     {
-      "id": "ozempic",
-      "name": "Ozempic",
+      "id": "test5",
+      "name": "Test5",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "test6",
+      "name": "Test6",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "hurt",
+      "name": "hurt",
+      "description": "hurts"
+    }
+  ],
+  "friday": [
+    {
+      "id": "test7",
+      "name": "Test7",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "test8",
+      "name": "Test8",
       "description": "0.25 mg once weekly"
     }
   ],
-  "Saturday": [
+  "saturday": [
     {
-      "id": "ozempic",
-      "name": "Ozempic",
+      "id": "test9",
+      "name": "Test9",
+      "description": "0.25 mg once weekly"
+    },
+    {
+      "id": "test10",
+      "name": "Test10",
       "description": "0.25 mg once weekly"
     }
   ]
