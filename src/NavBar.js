@@ -14,11 +14,6 @@ function NavBar() {
         </Link>
         <Nav className="ms-auto" navbar>
           <NavItem>
-            <NavLink to="/add" className="me-0">
-              Add Med
-            </NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink to="/sunday">Sunday</NavLink>
           </NavItem>
           <NavItem>
@@ -38,6 +33,11 @@ function NavBar() {
           </NavItem>
           <NavItem>
             <NavLink to="/saturday">Saturday</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/add" className="me-0">
+              Add Med
+            </NavLink>
           </NavItem>
         </Nav>
       </div>
