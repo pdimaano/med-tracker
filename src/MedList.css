@@ -8,7 +8,7 @@
 
 .list-group a {
     margin-top: 1rem;
-    border-left: 5px dotted;
+    text-decoration: none;
     color: white;
 }
 
@@ -25,7 +25,7 @@
 .list-group-item {
     background-color: transparent;
     font-weight: bold;
-    color: white;
+    color: #39393b;
 }
 
 .list-group-item:hover {
