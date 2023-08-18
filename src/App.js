@@ -107,31 +107,31 @@ function App() {
           <Route path="/add" element={<MedForm addMed={addMed} />} />
           <Route
             path="/sunday"
-            element={<MedList meds={sundays} day="sunday" />}
+            element={<MedList meds={sundays} day="Sunday" />}
           />
           <Route
             path="/monday"
-            element={<MedList meds={mondays} day="monday" />}
+            element={<MedList meds={mondays} day="Monday" />}
           />
           <Route
             path="/tuesday"
-            element={<MedList meds={tuesdays} day="tuesday" />}
+            element={<MedList meds={tuesdays} day="Tuesday" />}
           />
           <Route
             path="/wednesday"
-            element={<MedList meds={wednesdays} day="wednesday" />}
+            element={<MedList meds={wednesdays} day="Wednesday" />}
           />
           <Route
             path="/thursday"
-            element={<MedList meds={thursdays} day="thursday" />}
+            element={<MedList meds={thursdays} day="Thursday" />}
           />
           <Route
             path="/friday"
-            element={<MedList meds={fridays} day="friday" />}
+            element={<MedList meds={fridays} day="Friday" />}
           />
           <Route
             path="/saturday"
-            element={<MedList meds={saturdays} day="saturday" />}
+            element={<MedList meds={saturdays} day="Saturday" />}
           />
           <Route
             path="/sunday/:id"
