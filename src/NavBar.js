@@ -10,7 +10,7 @@ function NavBar() {
     <nav className="Navigation navbar navbar-expand-md">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Daily Medications
+          Track Your Meds
         </Link>
         <Nav className="ms-auto" navbar>
           <NavItem>
