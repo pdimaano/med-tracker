@@ -94,7 +94,7 @@ function MedForm({ addMed }) {
               />
             </div>
 
-            <Button className="float-end btn btn-outline-light">Add Med</Button>
+            <Button className="float-end btn btn-dark">Add Med</Button>
           </Form>
         </CardBody>
       </Card>
