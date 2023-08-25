@@ -9,11 +9,6 @@
       "id": "in",
       "name": "in",
       "description": "out"
-    },
-    {
-      "id": "outlaw",
-      "name": "outlaw",
-      "description": "deputy"
     }
   ],
   "monday": [
@@ -26,11 +21,6 @@
       "id": "wow",
       "name": "wow",
       "description": "wow"
-    },
-    {
-      "id": "wonder",
-      "name": "wonder",
-      "description": "wunder"
     }
   ],
   "tuesday": [
@@ -43,11 +33,6 @@
       "id": "brit",
       "name": "Brit",
       "description": "Brits"
-    },
-    {
-      "id": "dues",
-      "name": "dues",
-      "description": "dues day"
     }
   ],
   "wednesday": [
@@ -60,11 +45,6 @@
       "id": "test4",
       "name": "Test4",
       "description": "0.25 mg once weekly"
-    },
-    {
-      "id": "wed",
-      "name": "wed",
-      "description": "wet"
     }
   ],
   "thursday": [
@@ -77,11 +57,6 @@
       "id": "test6",
       "name": "Test6",
       "description": "0.25 mg once weekly"
-    },
-    {
-      "id": "hurt",
-      "name": "hurt",
-      "description": "hurts"
     }
   ],
   "friday": [
