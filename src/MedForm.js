@@ -4,7 +4,6 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
   Button,
   Form,
   Label,
@@ -51,7 +50,6 @@ function MedForm({ addMed }) {
       <Card>
         <CardBody>
           <CardTitle className="fw-bold text-center">Add Medication</CardTitle>
-          <CardText>Add a Medication</CardText>
 
           <Form onSubmit={handleSubmit}>
             <div className="mb-3">
