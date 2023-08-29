@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
+import RxImage from "./img/Rx_symbol.png"
 
 /** Home Page
  *
@@ -17,8 +18,9 @@ function Home() {
             </p>
           </CardTitle>
           <CardText>
-            For every day of the week
+            Your handy prescription manager for each day of the week
           </CardText>
+          <img src={RxImage} alt="Rx symbol" />
         </CardBody>
       </Card>
     </section>
