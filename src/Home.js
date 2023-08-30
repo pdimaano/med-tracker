@@ -20,7 +20,7 @@ function Home() {
           <CardText>
             Your handy prescription manager for each day of the week
           </CardText>
-          <img src={RxImage} alt="Rx symbol" />
+          <img src={RxImage} className="rx-image" alt="Rx symbol" />
         </CardBody>
       </Card>
     </section>
