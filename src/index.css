@@ -12,3 +12,8 @@ code {
   font-family: Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.rx-image {
+  height: 250px;
+  margin: 20px 20px;
+}
