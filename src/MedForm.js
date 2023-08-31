@@ -49,7 +49,7 @@ function MedForm({ addMed }) {
     <section className="col-md-4">
       <Card>
         <CardBody>
-          <CardTitle className="fw-bold text-center">Add Medication</CardTitle>
+          <CardTitle className="fw-bold text-center">Add A Medication</CardTitle>
 
           <Form onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -61,13 +61,13 @@ function MedForm({ addMed }) {
                 value={day}
                 onChange={handleChange}
               >
-                <option>sunday</option>
-                <option>monday</option>
-                <option>tuesday</option>
-                <option>wednesday</option>
-                <option>thursday</option>
-                <option>friday</option>
-                <option>saturday</option>
+                <option>Sunday</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
               </Input>
             </div>
 
