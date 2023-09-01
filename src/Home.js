@@ -10,7 +10,7 @@ import RxImage from "./img/Rx_symbol.png"
 function Home() {
   return (
     <section className="col-md-8">
-      <Card>
+      <Card className="home-card">
         <CardBody className="text-center">
           <CardTitle>
             <p className="fw-bold" style={{ fontSize: "1.5em" }}>
