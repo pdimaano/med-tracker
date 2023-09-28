@@ -18,7 +18,7 @@ function Home() {
             </p>
           </CardTitle>
           <CardText>
-            Your handy prescription manager for each day of the week
+            Never forget your daily meds again!
           </CardText>
           <img src={RxImage} className="rx-image" alt="Rx symbol" />
         </CardBody>
