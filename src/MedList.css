@@ -16,6 +16,7 @@
     text-decoration: none;
     border-left-style: solid;
     border-left-width: 3px;
+    border-left-color: #989595;
 }
 
 .list-group a:hover li {
@@ -24,6 +25,7 @@
 
 .list-group-item {
     background-color: transparent;
+    border-color: #989595;
     font-weight: bold;
     color: #000000;
 }
