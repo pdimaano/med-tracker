@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<DocumentFragment>
+  <section
+    class="col-md-4"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="fw-bold text-center card-title"
+        >
+          Add A Medication
+        </div>
+        <form
+          class=""
+        >
+          <div
+            class="mb-3"
+          >
+            <label
+              class="form-label"
+              for="day"
+            >
+              Day
+            </label>
+            <select
+              class="form-select"
+              id="day"
+              name="day"
+            >
+              <option>
+                Sunday
+              </option>
+              <option>
+                Monday
+              </option>
+              <option>
+                Tuesday
+              </option>
+              <option>
+                Wednesday
+              </option>
+              <option>
+                Thursday
+              </option>
+              <option>
+                Friday
+              </option>
+              <option>
+                Saturday
+              </option>
+            </select>
+          </div>
+          <div
+            class="mb-3"
+          >
+            <label
+              class="form-label"
+              for="name"
+            >
+              Name
+            </label>
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="mb-3"
+          >
+            <label
+              class="form-label"
+              for="description"
+            >
+              Description
+            </label>
+            <textarea
+              class="form-control"
+              id="description"
+              name="description"
+            />
+          </div>
+          <button
+            class="float-end btn btn-dark btn btn-secondary"
+          >
+            Add Med
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
