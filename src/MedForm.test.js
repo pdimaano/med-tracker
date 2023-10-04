@@ -11,20 +11,20 @@ it("renders without crashing", async function () {
   expect(asFragment()).toMatchSnapshot();
 });
 
-it("calls addItem with correct inputs upon save", async function () {
+it("calls addMed with correct inputs upon save", async function () {
   const handleSave = jest.fn();
   const { container } = render(
     <MemoryRouter initialEntries={["/add"]}>
-      <MedForm addItem={handleSave} />
+      <MedForm addMed={handleSave} />
     </MemoryRouter>
   );
-  fireEvent.change(screen.getAllByLabelText("Day"), {
+  fireEvent.change(screen.getByLabelText("Day"), {
     target: { value: "Sunday" },
   });
-  fireEvent.change(screen.getAllByLabelText("Name"), {
+  fireEvent.change(screen.getByLabelText("Name"), {
     target: { value: "test name" },
   });
-  fireEvent.change(screen.getAllByLabelText("Description"), {
+  fireEvent.change(screen.getByLabelText("Description"), {
     target: { value: "test description" },
   });
   const button = container.querySelector("button");
