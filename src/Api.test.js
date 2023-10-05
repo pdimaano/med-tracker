@@ -10,3 +10,11 @@ test("fetchMeds", async function () {
   expect(result).toEqual([]);
   expect(axios.get).toHaveBeenCalled();
 });
+
+test("addMed", async function () {
+  axios.post = jest.fn();
+
+  const result = await api.addMed();
+  expect(result).toBeUndefined();
+  expect(axios.post).toHaveBeenCalled();
+});
