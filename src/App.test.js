@@ -37,4 +37,24 @@ describe("Med Tracker routes", function () {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("renders the Sunday medications", async function () {
+    const { asFragment } = render(
+      <MemoryRouter initialEntries={["/sunday"]}>
+        <App />
+      </MemoryRouter>
+    );
+    await waitFor(() => screen.getByText("Sunday Meds"));
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders the Wednesday medications", async function () {
+    const { asFragment } = render(
+      <MemoryRouter initialEntries={["/wednesday"]}>
+        <App />
+      </MemoryRouter>
+    );
+    await waitFor(() => screen.getByText("Wednesday Meds"));
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
