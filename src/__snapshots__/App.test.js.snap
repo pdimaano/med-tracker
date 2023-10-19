@@ -1,5 +1,135 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Med Tracker routes renders a medication 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <nav
+      class="Navigation navbar navbar-expand-md"
+    >
+      <div
+        class="container-fluid"
+      >
+        <a
+          class="navbar-brand"
+          href="/"
+        >
+          Track Your Meds
+        </a>
+        <ul
+          class="ms-auto navbar-nav"
+        >
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/sunday"
+            >
+              Sunday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              aria-current="page"
+              class="active"
+              href="/monday"
+            >
+              Monday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/tuesday"
+            >
+              Tuesday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/wednesday"
+            >
+              Wednesday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/thursday"
+            >
+              Thursday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/friday"
+            >
+              Friday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class=""
+              href="/saturday"
+            >
+              Saturday
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class="me-0"
+              href="/add"
+            >
+              Add Med
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="fw-bold text-center card-title"
+            >
+              Test Med
+            </div>
+            <p
+              class="font-italic card-text"
+            >
+              Test description
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Med Tracker routes renders the Sunday medications 1`] = `
 <DocumentFragment>
   <div
