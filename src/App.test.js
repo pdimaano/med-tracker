@@ -38,6 +38,16 @@ describe("Med Tracker routes", function () {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it("renders a loading message before the data is loaded", async function () {
+    const { asFragment } = render(
+      <MemoryRouter initialEntries={["/"]}>
+        <App />
+      </MemoryRouter>
+    );
+    screen.getByText("Loading...");
+    await waitFor(() => screen.getByText(WELCOME_TEXT));
+  });
+
   it("renders the Sunday medications", async function () {
     const { asFragment } = render(
       <MemoryRouter initialEntries={["/sunday"]}>
