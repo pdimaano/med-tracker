@@ -67,4 +67,22 @@ describe("Med Tracker routes", function () {
     await waitFor(() => screen.getByText("Wednesday Meds"));
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("renders a medication", async function () {
+    api.fetchMeds.mockReturnValue([
+      {
+        id: "test1",
+        name: "Test Med",
+        description: "Test description",
+      },
+    ]);
+    const { asFragment } = render(
+      <MemoryRouter initialEntries={["/monday/test1"]}>
+        <App />
+      </MemoryRouter>
+    );
+    await waitFor(() => screen.getByText("Test Med"));
+    screen.getByText(/Test description/i);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
