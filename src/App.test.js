@@ -85,4 +85,15 @@ describe("Med Tracker routes", function () {
     screen.getByText(/Test description/i);
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it("renders the add med form", async function () {
+    const { asFragment } = render(
+      <MemoryRouter initialEntries={["/monday/test1"]}>
+        <App />
+      </MemoryRouter>
+    );
+    await waitFor(() => screen.getByText(/add med/i));
+    expect(asFragment()).toMatchSnapshot();
+  });
+
 });
