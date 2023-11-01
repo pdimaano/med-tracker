@@ -96,4 +96,28 @@ describe("Med Tracker routes", function () {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it("adds a medication successfully", async function () {
+    const { container, debug } = render(
+      <MemoryRouter initialEntries={["/"]}>
+        <App />
+      </MemoryRouter>
+    );
+    await waitFor(() => fireEvent.click(screen.getByText("Add Med")));
+
+    fireEvent.change(screen.getByLabelText("Day"), {
+      target: { value: "monday" },
+    });
+    fireEvent.change(screen.getByLabelText("Name"), {
+      target: { value: "test name" },
+    });
+    fireEvent.change(screen.getByLabelText("Description"), {
+      target: { value: "test description" },
+    });
+    const button = container.querySelector("button");
+
+    await waitFor(() => fireEvent.click(button));
+    expect(api.addMed).toHaveBeenCalled();
+
+    await waitFor(() => screen.getByText(WELCOME_TEXT));
+  });
 });
