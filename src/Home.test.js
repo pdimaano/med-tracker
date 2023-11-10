@@ -18,3 +18,9 @@ const testData = {
     },
   ],
 };
+
+describe("Home component", function () {
+  it("renders the home component", function () {
+    render(<Home />);
+  });
+})
