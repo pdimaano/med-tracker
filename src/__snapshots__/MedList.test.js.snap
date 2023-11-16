@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing for med list 1`] = `
+<DocumentFragment>
+  <section
+    class="col-md-4"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="fw-bold text-center card-title"
+        >
+          monday Meds
+        </div>
+        <ul
+          class="list-group"
+        >
+          <a
+            href="/monday/0"
+          >
+            <li
+              class="list-group-item"
+            >
+              test med
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
