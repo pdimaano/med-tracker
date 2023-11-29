@@ -6,6 +6,7 @@ main {
   padding-top: 15vh;
   height: calc(100vh - 56px);
   overflow: scroll;
+  background-color: #e6eaea;
   color: white;
 }
 
