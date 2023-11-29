@@ -3,6 +3,14 @@ nav {
     box-shadow: 0 2px 2px #100f0f;
 }
 
+.me-0 {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
 .nav-item {
     width: 100px;
     text-align: center;
