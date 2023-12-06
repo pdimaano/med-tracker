@@ -18,7 +18,7 @@ function Home() {
             </p>
           </CardTitle>
           <CardText>
-            A helpful way to track your important pills
+            The best way to remember your important pills
           </CardText>
           <img src={RxImage} className="rx-image" alt="Rx symbol" />
         </CardBody>
