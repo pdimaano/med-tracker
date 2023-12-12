@@ -6,81 +6,81 @@
       "description": "0.25 mg once weekly"
     },
     {
-      "id": "in",
-      "name": "in",
-      "description": "out"
+      "id": "sunday2",
+      "name": "Sunday2",
+      "description": "sunday description"
     }
   ],
   "monday": [
     {
-      "id": "test1",
-      "name": "Test1",
-      "description": "0.25 mg once weekly"
+      "id": "monday1",
+      "name": "Monday1",
+      "description": "monday1 description"
     },
     {
-      "id": "eat",
-      "name": "Eat",
-      "description": "Me"
+      "id": "monday2",
+      "name": "Monday2",
+      "description": "monday2 description"
     }
   ],
   "tuesday": [
     {
-      "id": "test2",
-      "name": "Test2",
-      "description": "0.25 mg once weekly"
+      "id": "tuesday1",
+      "name": "Tuesday1",
+      "description": "tuesday1 description"
     },
     {
-      "id": "brit",
-      "name": "Brit",
-      "description": "Brits"
+      "id": "tuesday2",
+      "name": "Tuesday2",
+      "description": "tuesday2 description"
     }
   ],
   "wednesday": [
     {
-      "id": "test3",
-      "name": "Test3",
-      "description": "0.25 mg once weekly"
+      "id": "wednesday1",
+      "name": "Wednesday1",
+      "description": "wednesday1 description"
     },
     {
-      "id": "test4",
-      "name": "Test4",
-      "description": "0.25 mg once weekly"
+      "id": "wednesday2",
+      "name": "Wednesday2",
+      "description": "wednesday2 description"
     }
   ],
   "thursday": [
     {
-      "id": "test5",
-      "name": "Test5",
-      "description": "0.25 mg once weekly"
+      "id": "thursday1",
+      "name": "Thursday1",
+      "description": "thursday1 description"
     },
     {
-      "id": "test6",
-      "name": "Test6",
-      "description": "0.25 mg once weekly"
+      "id": "thursday2",
+      "name": "Thursday2",
+      "description": "thursday2 description"
     }
   ],
   "friday": [
     {
-      "id": "test7",
-      "name": "Test7",
-      "description": "0.25 mg once weekly"
+      "id": "friday1",
+      "name": "Friday1",
+      "description": "friday1 description"
     },
     {
-      "id": "test8",
-      "name": "Test8",
-      "description": "0.25 mg once weekly"
+      "id": "friday2",
+      "name": "Friday2",
+      "description": "friday2 description"
     }
   ],
   "saturday": [
     {
-      "id": "test9",
-      "name": "Test9",
-      "description": "0.25 mg once weekly"
+      "id": "saturday1",
+      "name": "Saturday1",
+      "description": "saturday1 description"
     },
     {
-      "id": "test10",
-      "name": "Test10",
-      "description": "0.25 mg once weekly"
+      "id": "saturday2",
+      "name": "Saturday2",
+      "description": "saturday2 description"
     }
   ]
 }
