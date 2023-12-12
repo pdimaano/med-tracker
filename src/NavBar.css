@@ -7,8 +7,16 @@ nav {
     font-weight: bold;
 }
 
+.me-0:hover {
+    color: #717177;
+}
+
 .navbar-brand {
     font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #717177;
 }
 
 .nav-item {
