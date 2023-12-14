@@ -1,3 +1,3 @@
-## Med Tracker App
+## Daily Medication Tracker App
 
-A daily medication tracker built using React.
+A daily medication tracker built using React
